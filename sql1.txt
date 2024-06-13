@@ -129,7 +129,14 @@ Paste your SQL statement below:
 
 3. Retrieve all employees whose last name starts with C.  Paste your SQL statement below:
 
-
+[["EmployeeID", "LastName", "FirstName", "BirthDate", "Photo", "Notes"],
+ [8,
+  "Callahan ",
+  "Laura ",
+  "1/9/1958 ",
+  "EmpID8.pic ",
+  "Laura received a BA in psychology from the University of Washington. She has also completed a course in business French. She reads and writes French. "]]
+  
 4. Retrieve the order ID and customer name for all orders where the customer name starts with A.
 Here you will have to do a join of the Orders table and the Customers table.  Paste your SQL
 statement below.
