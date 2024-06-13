@@ -86,7 +86,46 @@ Paste your SQL statement below:
 
 2. Use an SQL Select statement to retrieve the names and prices for all products that cost less than $20.
 Paste your SQL statement below:
-
+[["ProductName", "Price"],
+ ["Chais ", 18.0],
+ ["Chang ", 19.0],
+ ["Aniseed Syrup ", 10.0],
+ ["Konbu ", 6.0],
+ ["Genen Shouyu ", 15.5],
+ ["Pavlova ", 17.45],
+ ["Teatime Chocolate Biscuits ", 9.2],
+ ["Sir Rodney's Scones ", 10.0],
+ ["Tunnbröd ", 9.0],
+ ["Guaraná Fantástica ", 4.5],
+ ["NuNuCa Nuß-Nougat-Creme ", 14.0],
+ ["Gorgonzola Telino ", 12.5],
+ ["Geitost ", 2.5],
+ ["Sasquatch Ale ", 14.0],
+ ["Steeleye Stout ", 18.0],
+ ["Inlagd Sill ", 19.0],
+ ["Chartreuse verte ", 18.0],
+ ["Boston Crab Meat ", 18.4],
+ ["Jack's New England Clam Chowder ", 9.65],
+ ["Singaporean Hokkien Fried Mee ", 14.0],
+ ["Gula Malacca ", 19.45],
+ ["Røgede sild ", 9.5],
+ ["Spegesild ", 12.0],
+ ["Zaanse koeken ", 9.5],
+ ["Chocolade ", 12.75],
+ ["Valkoinen suklaa ", 16.25],
+ ["Filo Mix ", 7.0],
+ ["Tourtière ", 7.45],
+ ["Ravioli Angelo ", 19.5],
+ ["Escargots de Bourgogne ", 13.25],
+ ["Louisiana Hot Spiced Okra ", 17.0],
+ ["Laughing Lumberjack Lager ", 14.0],
+ ["Scottish Longbreads ", 12.5],
+ ["Outback Lager ", 15.0],
+ ["Röd Kaviar ", 15.0],
+ ["Longlife Tofu ", 10.0],
+ ["Rhönbräu Klosterbier ", 7.75],
+ ["Lakkalikööri ", 18.0],
+ ["Original Frankfurter grüne Soße ", 13.0]]
 
 3. Retrieve all employees whose last name starts with C.  Paste your SQL statement below:
 
