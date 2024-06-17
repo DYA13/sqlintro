@@ -1617,6 +1617,11 @@ and total quantity.  Here you will have
 to satisfy the foreign key constraint.  You will also have to specify the ID of an existing
 employee.  Paste your SQL statement below.
 
+[["OrderID", "CustomerID", "EmployeeID", "OrderDate", "ShipperID"],
+ [10444, 78, 1, "2024-06-17 15:59:08", 1],
+ [10445, 78, 1, "2024-06-17 16:00:02", 1],
+ [10446, 78, 1, "2024-06-17 16:02:24", 1],
+ [10447, 78, 2, "2024-06-17 16:04:22", 2]]
 
 6. Add three OrderDetails.  These should specify the ID of the new Order you just created.  For each,
 you will have to specify the ID of an existing product.  Paste your SQL statement below.
