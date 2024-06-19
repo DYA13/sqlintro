@@ -29,11 +29,11 @@ WHERE Price < 20;
 Here you will have to do a join of the Orders table and the Customers table.  Paste your SQL
 statement below.
 
-[["OrderID", "CustomerName"],
- [10308, "Ana Trujillo Emparedados y helados "],
- [10355, "Around the Horn "],
- [10365, "Antonio Moreno Taquería "],
- [10383, "Around the Horn "]]
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+WHERE Customers.CustomerName LIKE 'A%';
+
 
 
 5. Retrieve the list of customers, ordered by customer name, along with their order IDs.  Note
