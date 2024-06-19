@@ -49,24 +49,11 @@ SELECT CustomerName FROM Customers WHERE CustomerID NOT IN (SELECT CustomerID FR
 This is a subquery -- we haven't talked about those.  But, you can do the same thing with a left
 join by comparing the OrderID column with NULL.  Paste your SQL statement below.
 
-[["CustomerName"],
- ["Alfreds Futterkiste "],
- ["Blauer See Delikatessen "],
- ["Cactus Comidas para llevar "],
- ["FISSA Fabrica Inter. Salchichas S.A. "],
- ["France restauration "],
- ["Great Lakes Food Market "],
- ["La corne d'abondance "],
- ["Laughing Bacchus Wine Cellars "],
- ["Lazy K Kountry Store "],
- ["Let's Stop N Shop "],
- ["Maison Dewey "],
- ["North/South "],
- ["Paris spécialités "],
- ["Rancho grande "],
- ["Spécialités du monde "],
- ["The Cracker Box "],
- ["Trail's Head Gourmet Provisioners "]]
+SELECT Customers.CustomerName
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+WHERE Orders.OrderID IS NULL;
+
 
 7. Retrieve the OrderID and ProductName of every order for a product with Tofu in the name.
 Paste your SQL statement below.  You will have to join Orders, OrderDetails, and Products.
