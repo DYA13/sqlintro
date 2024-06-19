@@ -58,21 +58,8 @@ WHERE Orders.OrderID IS NULL;
 7. Retrieve the OrderID and ProductName of every order for a product with Tofu in the name.
 Paste your SQL statement below.  You will have to join Orders, OrderDetails, and Products.
 
-[["OrderID", "ProductName"],
- [10249, "Tofu "],
- [10254, "Longlife Tofu "],
- [10263, "Longlife Tofu "],
- [10325, "Tofu "],
- [10333, "Tofu "],
- [10370, "Longlife Tofu "],
- [10375, "Tofu "],
- [10381, "Longlife Tofu "],
- [10382, "Longlife Tofu "],
- [10393, "Tofu "],
- [10409, "Tofu "],
- [10412, "Tofu "],
- [10418, "Longlife Tofu "],
- [10427, "Tofu "],
- [10439, "Longlife Tofu "]]
-
-
+SELECT Orders.OrderID, Products.ProductName
+FROM Orders
+JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID = Products.ProductID
+WHERE Products.ProductName LIKE '%Tofu%';
