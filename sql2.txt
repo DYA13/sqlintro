@@ -55,6 +55,10 @@ ORDER BY c.CustomerName, p.ProductName;
 to satisfy the foreign key constraint.  You will also have to specify the ID of an existing
 employee.  Paste your SQL statement below.
 
+INSERT INTO Orders (CustomerID, EmployeeID, ShipperID, OrderDate)
+VALUES (78, 1, 1, CURRENT_TIMESTAMP);
+
+
 6. Add three OrderDetails.  These should specify the ID of the new Order you just created.  For each,
 you will have to specify the ID of an existing product.  Paste your SQL statement below.
 
