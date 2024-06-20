@@ -76,7 +76,9 @@ WHERE OrderID = 10449 AND ProductID = 3;
 8. Update the Price Table, so that every product with a price less than $20 has the price increased by
 0.50.  Paste your SQL statement below.
 
-
+UPDATE Products
+SET Price = Price + 0.50
+WHERE Price < 20.00;
 
 9.  Try to delete Customer 76.  What happens? What would you have to delete in order to delete
 this customer?  (Hint: It's not just orders.)   There are three statements to be performed, in order
