@@ -69,10 +69,13 @@ VALUES (10449, 1, 5),
 
 7.  Delete the third of the OrderDetails you just added.  Paste your SQL statement below.
 
+DELETE FROM OrderDetails 
+WHERE OrderID = 10449 AND ProductID = 3;
 
 
 8. Update the Price Table, so that every product with a price less than $20 has the price increased by
 0.50.  Paste your SQL statement below.
+
 
 
 9.  Try to delete Customer 76.  What happens? What would you have to delete in order to delete
