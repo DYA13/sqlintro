@@ -88,4 +88,14 @@ DELETE FROM OrderDetails WHERE OrderID IN (SELECT OrderID FROM Orders WHERE Cust
 
 What are the other two statements?  Try them out, and then paste them below.
 
+Delete orderDetails associated with orders of customer 76:
+DELETE FROM OrderDetails 
+WHERE OrderID IN (SELECT OrderID FROM Orders WHERE CustomerID = 76);
 
+Delete orders placed by customer 76:
+DELETE FROM Orders 
+WHERE CustomerID = 76;
+
+Delete customer 76:
+DELETE FROM Customers 
+WHERE CustomerID = 76;
