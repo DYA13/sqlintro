@@ -62,6 +62,10 @@ VALUES (78, 1, 1, CURRENT_TIMESTAMP);
 6. Add three OrderDetails.  These should specify the ID of the new Order you just created.  For each,
 you will have to specify the ID of an existing product.  Paste your SQL statement below.
 
+INSERT INTO OrderDetails (OrderID, ProductID, Quantity)
+VALUES (10449, 1, 5),
+       (10449, 2, 3),
+       (10449, 3, 10);
 
 7.  Delete the third of the OrderDetails you just added.  Paste your SQL statement below.
 
