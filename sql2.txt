@@ -34,7 +34,7 @@ FROM Customers c
 JOIN Orders o ON c.CustomerID = o.CustomerID
 JOIN OrderDetails od ON o.OrderID = od.OrderID
 JOIN Products p ON od.ProductID = p.ProductID
-GROUP BY c.CustomerID, p.ProductID, p.ProductName
+GROUP BY c.CustomerID, p.ProductID
 ORDER BY c.CustomerName, p.ProductName;
 
 4. Extend the previous query to give the total price as well as the customer name, product name, 
